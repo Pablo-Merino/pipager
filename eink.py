@@ -18,12 +18,11 @@ screen_details = {
 
 def generate_view(canvas):
   print("redrawing...")
-  print(screen_details)
   canvas.clear()
-  canvas.text((1,0), screen_details["time"])
-  canvas.text((1,93), screen_details["second_line"])
-  canvas.text((1,13), screen_details["message_line"])
-  canvas.line([0, 12, 212, 12], 1)
+  canvas.text((5,10), screen_details["time"])
+  canvas.text((5,93), screen_details["second_line"])
+  canvas.text((5,23), screen_details["message_line"])
+  canvas.line([5, 22, 212, 22], 1)
   canvas.line([0, 92, 212, 92], 1)
   canvas.draw()
 
